@@ -39,7 +39,3 @@ while (num >= 1) {
     num = num -1;
   }
 
-    // check value of num
-    // print lyrics using num
-    // don't forget to check pluralization on the last line!
-    // decrement num
