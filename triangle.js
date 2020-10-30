@@ -14,22 +14,32 @@
 function makeLine(length) {
     var line = "";
     for (var j = 1; j <= length; j++) {
-        line += "* ";
+        line += "_ ";
     }
     return line + "\n";
 }
 
-// your code goes here.  Make sure you call makeLine() in your own code.
+// creates a triangle
 
-function buildTriangle (length) {
+function buildTriangle (numberOfLines) {
   var triangle = "";
-  var lineNumber = 1;
 
-  for (lineNumer = 1; lineNumber <= length; lineNumber++) {
+  for (var lineNumber = 1; lineNumber <= numberOfLines; lineNumber++) {
     triangle = triangle + makeLine(lineNumber);
   }
   return triangle;
 
 }
 
-console.log(buildTriangle(20));
+// creates multiple triangles with as many lines as entered in argument
+
+function buildTriangles (length, numberOfLines) {
+  var triangles = "";
+  for (var i = 0; i <length; i ++){
+    triangles += buildTriangle(numberOfLines);
+  }
+
+  return triangles
+}
+console.log(buildTriangles(3, 20));
+
