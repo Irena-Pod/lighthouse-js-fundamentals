@@ -31,5 +31,5 @@ function buildTriangle (length) {
   return triangle;
 
 }
-// test your code by uncommenting the following line
+
 console.log(buildTriangle(20));
