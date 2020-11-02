@@ -2,9 +2,9 @@ const packingList = ["bowls", "plates", "pots", "pans", "eating utensils", "glas
 
 // Loop through all packingList items
 console.log("Kitchen stuff to pack:");
-for (let i = 0; i < packingList.length; i++) {
+let i = 0;
+while (i < packingList.length) {
   console.log(packingList[i]);
+  i++;
 }
 
-//Example of accessing one specific item in the array (index it)
-console.log("The most important items to pack are " + packingList[3]);
